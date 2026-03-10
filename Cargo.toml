@@ -1,0 +1,25 @@
+[package]
+name = "warrant-core"
+version = "0.1.0"
+edition = "2024"
+description = "Core library for warrant-shell capability policies"
+license = "MIT OR Apache-2.0"
+repository = "https://github.com/warrant-sh/warrant-core"
+homepage = "https://warrant.sh"
+keywords = ["ai", "security", "capability", "policy"]
+categories = ["authentication"]
+
+[dependencies]
+base64 = "0.22"
+ed25519-dalek = "2.2"
+rand = "0.8"
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+thiserror = "2.0"
+toml = "1"
+hmac = "0.12"
+sha2 = "0.10"
+libc = "0.2"
+
+[dev-dependencies]
+tempfile = "3.12"
